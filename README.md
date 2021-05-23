@@ -1,6 +1,6 @@
 # Python-Projects
 ### Simple Python Projects with Source Code for practice
-> Things and Libaries used until now
+> Stuffs Used
   - Python Basics
   - Turtle Graphics
   - Pandas Library
