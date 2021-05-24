@@ -1,5 +1,5 @@
 import random
-from art import logo
+# from art import logo
 
 cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
 
@@ -35,7 +35,7 @@ def print_values(my_cards,pc_cards,part):
         print(f"\tComputer cards: {pc_cards}, current score: {sum(pc_cards)}")
 
 def start_game():
-    print(logo)
+    # print(logo)
     my_cards = [deal_card(),deal_card()]
     pc_cards = [deal_card(),deal_card()]
     

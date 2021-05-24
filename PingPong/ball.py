@@ -9,7 +9,7 @@ class Ball:
         self.ball.speed(0)
         self.y_move = 10
         self.x_move = 10
-        self.speed_val = 0.1
+        self.speed_val = 0.01
 
     def start_moving(self):
         x = self.ball.xcor() + self.x_move

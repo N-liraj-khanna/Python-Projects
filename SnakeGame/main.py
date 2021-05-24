@@ -24,7 +24,7 @@ screen.onkey(key="Left", fun=snake.left)
 is_on = True
 while is_on:
     screen.update()
-    time.sleep(0.1)
+    time.sleep(0.5)
     snake.move()
 
     if food.snake_food.distance(snake.head) < 15:
@@ -32,8 +32,9 @@ while is_on:
         score.display(1)
         snake.extend()
     elif snake.check_wall_collision() or snake.check_tail_collision():
-        is_on = False
-        score.game_over()
+        score.reset()
+        snake.reset()
+
 
 screen.exitonclick()
 

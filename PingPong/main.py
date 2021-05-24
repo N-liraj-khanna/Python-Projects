@@ -55,20 +55,20 @@ while game_is_on:
     if ball.ball.ycor() > 280 or ball.ball.ycor() < -280:
         ball.bounce_wall()
 
-    # Paddle Collision
-    elif ball.ball.distance(second_player.paddle) < 60 and ball.ball.xcor() > 350:
-        ball.bounce_paddle()
-        ball.speed_val *= 0.9
-    elif ball.ball.distance(first_player.paddle) < 60 and ball.ball.xcor() < -350:
-        ball.speed_val *= 0.9
-        ball.bounce_paddle()
-
-    elif ball.ball.xcor() > 400:
+    elif ball.ball.xcor() > 420:
         ball.reset_ball()
         score.left_paddle_score += 1
-    elif ball.ball.xcor() < -400:
+    elif ball.ball.xcor() < -420:
         ball.reset_ball()
         score.right_paddle_score += 1
+
+    # Paddle Collision
+    elif ball.ball.distance(second_player.paddle) < 60 and ball.ball.xcor() > 350 and ball.ball.xcor() < (second_player.paddle.xcor()):
+        ball.bounce_paddle()
+        ball.speed_val *= 0.9
+    elif ball.ball.distance(first_player.paddle) < 60 and ball.ball.xcor() < -350 and ball.ball.xcor() < (first_player.paddle.xcor()):
+        ball.speed_val *= 0.9
+        ball.bounce_paddle()
 
     score.display()
 
