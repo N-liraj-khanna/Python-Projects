@@ -5,7 +5,7 @@
 
 ---
 
-### *You can select your language in wikipedia, link given below, or if the language is absent, you can search in github for the language the prefered translation*  
+### *You can select your language in wikipedia, link given below, or you can search in github for the language and the prefered translation*  
 ### [Wikipedia Link](https://en.wikipedia.org/wiki/Word_lists_by_frequency)
 
 > - This program Shows the most frequently used words from the file with its translation
