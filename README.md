@@ -1,5 +1,5 @@
 # Python-Projects
-### Simple Python Projects with Source Code for practice
+### Source Code for Python Projects using different modules for practice
 > Stuffs Used
 > - Python Basics
 > - Turtle Graphics
